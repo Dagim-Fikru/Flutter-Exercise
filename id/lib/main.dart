@@ -25,6 +25,16 @@ class simpleId extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           // ignore: prefer_const_literals_to_create_immutables
           children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('joker.jpg'),
+                radius: 70,
+              ),
+            ),
+            Divider(
+              height: 60.0,
+              color: Colors.black,
+            ),
             Text(
               'Name:',
               style: TextStyle(
