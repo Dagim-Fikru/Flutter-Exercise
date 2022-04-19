@@ -3,8 +3,9 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: simpleId(),
-));
+      home: simpleId(),
+    ));
+
 class simpleId extends StatelessWidget {
   const simpleId({Key? key}) : super(key: key);
 
@@ -15,6 +16,7 @@ class simpleId extends StatelessWidget {
         title: Text('Simple Id'),
         backgroundColor: Colors.brown,
         centerTitle: true,
+        elevation: 0.0,
       ),
     );
   }
