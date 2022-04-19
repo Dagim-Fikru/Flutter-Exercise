@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,6 @@ class simpleId extends StatelessWidget {
             ),
             SizedBox(
               height: 10.0,
-              width: 10.0,
             ),
             Text(
               'Dagim Fikru',
@@ -43,6 +42,98 @@ class simpleId extends StatelessWidget {
                   letterSpacing: 2.0,
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            Text(
+              'Age:',
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              '21',
+              style: TextStyle(
+                  color: Color.fromARGB(255, 175, 154, 68),
+                  letterSpacing: 2.0,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            Text(
+              'Sex:',
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'M',
+              style: TextStyle(
+                  color: Color.fromARGB(255, 175, 154, 68),
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            Text(
+              'Nationality:',
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'Ethiopian',
+              style: TextStyle(
+                  color: Color.fromARGB(255, 175, 154, 68),
+                  letterSpacing: 2.0,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.phone,
+                  color: Colors.white,
+                ),
+                Text(
+                  ' +251926560513',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 175, 154, 68), fontSize: 20.0),
+                ),
+                SizedBox(
+                  width: 70.0,
+                ),
+                Icon(
+                  Icons.email,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                ),
+                Text(
+                  ' dagimfikru@gmail.com',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 175, 154, 68),
+                    fontSize: 20.0,
+                  ),
+                )
+              ],
             )
           ],
         ),
