@@ -6,8 +6,16 @@ void main() => runApp(MaterialApp(
       home: simpleId(),
     ));
 
-class simpleId extends StatelessWidget {
+class simpleId extends StatefulWidget {
   const simpleId({Key? key}) : super(key: key);
+
+  @override
+  State<simpleId> createState() => _simpleIdState();
+}
+
+class _simpleIdState extends State<simpleId> {
+  int age = 0;
+  var sex = 'M';
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +26,15 @@ class simpleId extends StatelessWidget {
         backgroundColor: Colors.brown,
         centerTitle: true,
         elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            // age += 1;
+            sex = 'F';
+          });
+        },
+        child: Icon(Icons.add),
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -33,7 +50,7 @@ class simpleId extends StatelessWidget {
             ),
             Divider(
               height: 60.0,
-              color: Colors.black,
+              color: Color.fromARGB(255, 222, 217, 217),
             ),
             Text(
               'Name:',
@@ -67,7 +84,7 @@ class simpleId extends StatelessWidget {
               height: 10.0,
             ),
             Text(
-              '21',
+              '$age',
               style: TextStyle(
                   color: Color.fromARGB(255, 175, 154, 68),
                   letterSpacing: 2.0,
@@ -88,7 +105,7 @@ class simpleId extends StatelessWidget {
               height: 10.0,
             ),
             Text(
-              'M',
+              sex,
               style: TextStyle(
                   color: Color.fromARGB(255, 175, 154, 68),
                   fontSize: 20.0,
