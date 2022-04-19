@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore
 
 import 'package:flutter/material.dart';
 
@@ -117,7 +117,9 @@ class simpleId extends StatelessWidget {
                 Text(
                   ' +251926560513',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 175, 154, 68), fontSize: 20.0),
+                      color: Color.fromARGB(255, 175, 154, 68),
+                      fontSize: 18.0,
+                      letterSpacing: 2.0),
                 ),
                 SizedBox(
                   width: 70.0,
@@ -129,12 +131,30 @@ class simpleId extends StatelessWidget {
                 Text(
                   ' dagimfikru@gmail.com',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 175, 154, 68),
-                    fontSize: 20.0,
-                  ),
+                      color: Color.fromARGB(255, 175, 154, 68),
+                      fontSize: 18.0,
+                      letterSpacing: 2.0),
                 )
               ],
-            )
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.location_pin,
+                  color: Colors.white,
+                ),
+                Text(
+                  ' Addis Ababa,  Ethiopia',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 175, 154, 68),
+                      fontSize: 18.0,
+                      letterSpacing: 2.0),
+                ),
+              ],
+            ),
           ],
         ),
       ),
