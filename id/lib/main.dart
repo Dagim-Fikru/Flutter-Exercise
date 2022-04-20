@@ -1,9 +1,10 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore
 
 import 'package:flutter/material.dart';
+import 'package:id/list.dart';
 
 void main() => runApp(MaterialApp(
-      home: simpleId(),
+      home: listTest(),
     ));
 
 class simpleId extends StatefulWidget {
@@ -30,8 +31,8 @@ class _simpleIdState extends State<simpleId> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            // age += 1;
-            sex = 'F';
+            age += 1;
+            // sex = 'F';
           });
         },
         child: Icon(Icons.add),
