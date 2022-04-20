@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, camel_case_types
 
 import 'package:flutter/material.dart';
+import 'authors.dart';
 
 void main() => runApp(MaterialApp(
       home: listTest(),
@@ -14,10 +15,10 @@ class listTest extends StatefulWidget {
 }
 
 class _listTestState extends State<listTest> {
-  List<String> sentences = [
-    'Abebe beso bela',
-    'Chala chube chebete',
-    'Dagim code aderege'
+  List<list> sentences = [
+    list(sentence: 'Abebe beso bela', author: 'Abebe'),
+    list(sentence: 'Chala chube chebete', author: 'Chala'),
+    list(sentence: 'Dagim code aderege', author: 'Dagim')
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class _listTestState extends State<listTest> {
       ),
       body: Column(
         children: sentences.map((e) {
-          return Text(e);
+          return Text('${e.sentence} - ${e.author}');
         }).toList(),
       ),
     );
