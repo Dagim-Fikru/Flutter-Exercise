@@ -1,8 +1,8 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, camel_case_types
 
 class list {
-  late String sentence;
+  late String quote;
   late String author;
 
-  list({required this.sentence, required this.author});
+  list({required this.quote, required this.author});
 }
